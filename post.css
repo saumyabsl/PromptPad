@@ -1,0 +1,78 @@
+
+/* Style the form and page layout as needed */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-form {
+  margin-bottom: 20px;
+}
+
+label, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* CSS for displaying user's posts */
+.user-posts {
+  margin-top: 20px;
+}
+
+.post {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.post img,
+.post video {
+  max-width: 100%; /* Ensure the media scales within its container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove extra spacing beneath inline media elements */
+  margin-top: 10px; /* Add some spacing between media and text content */
+}
+
+.post h3,
+.post p {
+  margin: 0;
+}
+
+.post video {
+  width: 100%; /* Ensure video width spans the container */
+}
+
+/* Other styles for your posts (e.g., text content) */
+.post h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}

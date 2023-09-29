@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="post.css" />
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Post a Prompt</title>
+        <!-- Include your CSS files for styling -->
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <header>
+          <h1>Share Your Prompt and Output</h1>
+        </header>
+        <main>
+          <section class="post-form">
+            <h2>Create a New Post</h2>
+            <form id="postForm" enctype="multipart/form-data">
+              <label for="prompt">Prompt:</label>
+              <textarea id="prompt" name="prompt" rows="4" required></textarea>
+              <label for="output">Output:</label>
+              <textarea id="output" name="output" rows="6" required></textarea>
+              <label for="uploadFile">Upload Photo or Video (Optional):</label>
+              <input
+                type="file"
+                id="uploadFile"
+                name="file"
+                accept="image/*,video/*"
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+          <section class="user-posts">
+            <h2>Your Posts</h2>
+            <div id="userPosts">
+              <!-- Display user's posts dynamically using JavaScript -->
+            </div>
+          </section>
+        </main>
+        <script src="post.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
